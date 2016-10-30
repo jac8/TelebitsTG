@@ -1,4 +1,4 @@
-local makan = 90285047
+local makan = 287147726
 local function action_by_reply(extra, success, result)
   local hash = 'rank:variables'
   local text = ''
