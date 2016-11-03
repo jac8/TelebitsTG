@@ -108,10 +108,10 @@ local function pre_process(msg)
 	  if msg.to.type == 'chat' or msg.to.type == 'channel' then
 		if username then
 			savelog(msg.to.id, name_log.." @"..username.." ["..msg.from.id.."] kicked for #spam")
-			send_large_msg(receiver , "Flooding is not allowed here Name: "..(msg.from.first_name or " ").." Last Name: "..(msg.from.last_name or "").." Username: @"..username.." ID:["..msg.from.id.."] Status: User Globally banned")
+			send_large_msg(receiver , "در این مکان فلود مجاز نیست.  نام : Name: "..(msg.from.first_name or " ").."      یوز نیم : @"..username.."    ایدی : ["..msg.from.id.."]   وضعیت : کاربر بن گلوبال شد.")
 		else
 			savelog(msg.to.id, name_log.." ["..msg.from.id.."] kicked for #spam")
-			send_large_msg(receiver , "Flooding is not allowed here Name: "..(msg.from.first_name or " ").." Last Name: "..(msg.from.last_name or "").." Username: @"..username.." ID:["..msg.from.id.."] Status: User Globally banned")
+			send_large_msg(receiver , "در این مکان فلود مجاز نیست.  نام : Name: "..(msg.from.first_name or " ").."      یوز نیم : @"..username.."    ایدی : ["..msg.from.id.."]   وضعیت : کاربر بن گلوبال شد.")
 		end
 	  end
       -- incr it on redis
