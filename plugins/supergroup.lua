@@ -1318,7 +1318,7 @@ local function run(msg, matches)
 			end
 		end
 
-		if matches[1] == 'ایدی' then
+		if matches[1] == 'id' then
 			if type(msg.reply_id) ~= "nil" and is_momod(msg) and not matches[2] then
 				local cbreply_extra = {
 					get_cmd = 'id',
@@ -2138,10 +2138,8 @@ return {
   "^[#!/]([Bb]lock) (.*)",
 	"^[#!/]([Bb]lock)",
 	"^[#!/]([Tt]osuper)$",
-	"^[!/](id)$",
-	"^[!/](id) (.*)$",
-   "^[!#/]([Ii]Dd)$",
-	"^[!#/]([Ii]Dd) (.*)$",
+	"^[!/]([Ii][Dd])$",
+	"^[!/]([Ii][Dd]) (.*)$",
 	"^[#!/]([Kk]ickme)$",
 	"^[#!/]([Kk]ick) (.*)$",
 	"^[#!/]([Nn]ewlink)$",
