@@ -1342,7 +1342,7 @@ local function run(msg, matches)
 				resolve_username(username,  callbackres, cbres_extra)
 			else
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested SuperGroup ID")
-				return reply_msg(msg.id,"▪️نام گروه: " ..string.gsub(msg.to.print_name, "_", " ").. "\n▫️ایدی سوپرگروه:"..msg.to.id.."\n▪️ایدی کاربری:"..msg.from.id.."\n▫️نام شما: "..msg.from.print_name.."\n🔻یوزرنیم کاربری:@"..msg.from.username, ok_cb, false)
+				return reply_msg(msg.id,"▪️نام گروه : " ..string.gsub(msg.to.print_name, "_", " ").. "\n▫️ایدی سوپرگروه : "..msg.to.id.."\n▪️ایدی کاربری: "..msg.from.id.."\n▫️نام شما : "..msg.from.print_name.."\n🔻یوزرنیم کاربری : @"..msg.from.username, ok_cb, false)
 			end
 		end
 
