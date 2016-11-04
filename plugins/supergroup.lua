@@ -1318,7 +1318,7 @@ local function run(msg, matches)
 			end
 		end
 
-		if matches[1] == 'ایدی' then
+		if matches[1] == 'id'or matches[1] =='ایدی' then
 			if type(msg.reply_id) ~= "nil" and is_momod(msg) and not matches[2] then
 				local cbreply_extra = {
 					get_cmd = 'id',
